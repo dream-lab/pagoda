@@ -14,8 +14,8 @@ This project provides a comprehensive framework to estimate and measure the comp
 
 - Jupyter notebooks for post-processing and visualizing the collected data, including roofline plots and batch size experiments.
 
+### Project Structure
 ```
-Project Structure
 ├── onnx_models/                   # Directory for generated ONNX models
 ├── runtime_data/                  # Directory for storing raw and processed data
 │   └── ncu_work/                  # NVIDIA Nsight Compute raw data
@@ -54,7 +54,7 @@ Prerequisites
 **Clone the repository:**
 
 ```
-git clone [https://github.com/dream-lab/pagoda.git](https://github.com/dream-lab/pagoda.git)
+git clone https://github.com/dream-lab/pagoda.git
 cd pagoda
 ```
 
