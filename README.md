@@ -63,8 +63,13 @@ pip install -r requirements.txt
 **Generate ONNX Models**
 Use the `create_onnx_models.ipynb` Jupyter notebook to export the supported PyTorch models to the ONNX format. The models will be saved in the `onnx_models/` directory.
 
+To create .onnx file, load the model, specify the input dimensions (keep the batch size 1) and export it. Refer to example cells in the notebook.
+
 **Estimate FLOPs, Memory Accesses, and Arithmetic Intensity**
 The `model.py` script uses the ONNX models to estimate the FLOPs, Memory Accesses, and Arithmetic Intensity for a given DNN model. This script can estimate these metrics for both **training** and **inference** workloads. Make sure to pass the correct workload to get the correct estimates.
+```bash
+python analytical_model/model.py --model_path <path to .onnx file> --model_name <name_of_the_model> --training <set to True if for training> --batch_size <batch size>
+```
 
 **Run Performance Analysis**
 The `inference_automation.sh` script automates the process of profiling models using NCU. This script is configured to profile models with different batch sizes and save the results in the `runtime_data/ncu_work/` directory.
