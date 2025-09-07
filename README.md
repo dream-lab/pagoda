@@ -54,8 +54,8 @@ Prerequisites
 **Clone the repository:**
 
 ```
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-cd your-repo-name
+git clone [https://github.com/dream-lab/pagoda.git](https://github.com/dream-lab/pagoda.git)
+cd pagoda
 ```
 
 **Install the required Python packages:**
@@ -65,20 +65,17 @@ pip install -r requirements.txt
 
 ### Usage
 **Generate ONNX Models**
-Use the create_onnx_models.ipynb Jupyter notebook to export the supported PyTorch models to the ONNX format. The models will be saved in the onnx_models/ directory.
+Use the `create_onnx_models.ipynb` Jupyter notebook to export the supported PyTorch models to the ONNX format. The models will be saved in the `onnx_models/` directory.
 
 **Run Performance Analysis**
-The inference_automation.sh script automates the process of profiling models using NCU. This script is configured to profile models with different batch sizes and save the results in the runtime_data/ncu_work/ directory.
+The `inference_automation.sh` script automates the process of profiling models using NCU. This script is configured to profile models with different batch sizes and save the results in the `runtime_data/ncu_work/` directory.
 
 **Post-processing and Visualization**
 The collected NCU data can be analyzed and visualized using the provided Jupyter notebooks.
 
-ncu-files-analysis.ipynb: Provides a detailed breakdown of kernel-level performance.
+`ncu-files-analysis.ipynb`: Provides a detailed breakdown of kernel-level performance.
 
-roofline_batch_size_expt.ipynb: Contains scripts to analyze performance across different batch sizes and generate roofline plots.
-
-### Contributing
-We welcome contributions! Please feel free to open an issue or submit a pull request.
+`roofline_batch_size_expt.ipynb`: Contains scripts to analyze performance across different batch sizes and generate roofline plots.
 
 ### License
 This project is licensed under the Apache License.
