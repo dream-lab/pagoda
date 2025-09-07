@@ -1,7 +1,7 @@
 import argparse
 import numpy as np
-import src.tools.inference_estimates as inference_estimates
-import inference_estimates_lstm
+import src.tools.estimates as estimates
+import src.tools.estimates_lstm as estimates_lstm
 import csv
 
 
@@ -29,10 +29,10 @@ input_size = {
 }
 
 if model_name == 'lstm':
-    collector = inference_estimates_lstm.LayerInfoCollectorONNX(model_path, input_size[model_name], batch_size=batch_size)
+    collector = estimates_lstm.LayerInfoCollectorONNX(model_path, input_size[model_name], batch_size=batch_size)
     layer_infos = collector.run()
 else:
-    collector = inference_estimates.LayerInfoCollectorONNX(model_path, input_size[model_name], batch_size=batch_size)
+    collector = estimates.LayerInfoCollectorONNX(model_path, input_size[model_name], batch_size=batch_size)
     layer_infos = collector.run()
     
 total_flops, total_mem, contri = 0, 0, {}
