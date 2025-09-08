@@ -1,7 +1,13 @@
-# Pagoda
+# Pagoda: An Energy and Time Roofline Study for DNN Workloads on Jetson Edge Accelerators
 
+Edge accelerators such as Nvidia Jetsons are becoming an integral part of the computing continuum, and are often used for DNN inferencing and training. 
+Nvidia Jetson edge devices have 2000+ CUDA cores within a 70W power envelope and offer 1000s of power modes to customize CPU, GPU and memory frequencies. 
+Their widely varying power–performance trade-offs can be exploited for energy and power-constrained deployments. 
+While data-driven methods to predict the power and latency of DNN workloads for edge devices exist, there is a lack of principled study to understand why edge accelerators and their power modes perform the way they do. 
+Pagoda presents a time roofline and a novel energy roofline model for the Jetson Orin AGX for diverse power modes, coupled with an analytical model of the compute (FLOP) and memory access (bytes) for DNN inference workloads to analyze them from first principles.
+These reveal unique, sometimes counter-intuitive, insights into the power and performance behavior of DNN workloads on edge accelerators. It also we applies these methods to tune the power mode (and hence the roofline) of the edge device to optimize the latency and energy for DNN inference, with up to 15% lower energy and minimal degradation in inference time.
 
-This repository contains a suite of tools and scripts for analyzing and estimating the performance of Deep Neural Network (DNN) models on GPU hardware, with a focus on FLOPs, memory accesses, and roofline model analysis.
+This repository contains a suite of tools and scripts used by Pagoda for analyzing and estimating the performance of Deep Neural Network (DNN) models on GPU hardware, with a focus on FLOPs, memory accesses, and roofline model analysis.
 
 ### Overview
 This project provides a comprehensive framework to estimate and measure the computational and memory characteristics of various DNN models. It includes:
