@@ -92,4 +92,4 @@ The collected NCU data can be analyzed and visualized using the provided Jupyter
 This project is licensed under the Apache License.
 
 ## Attribution
-Pagoda: An Energy and Time Roofline Study for DNN Workloads on Edge Accelerators, Prashanthi S. K., Kunal Kumar Sahoo, Amartya Ranjan Saikia, Pranav Gupta, Atharva Vinay Joshi, Priyanshu Pansari and Yogesh Simmhan, Technical report, Indian Institute of Science, 2005, https://github.com/dream-lab/pagoda/
+Pagoda: An Energy and Time Roofline Study for DNN Workloads on Edge Accelerators, [Prashanthi S. K.](mailto:prashanthis@iisc.ac.in), Kunal Kumar Sahoo, Amartya Ranjan Saikia, Pranav Gupta, Atharva Vinay Joshi, Priyanshu Pansari and [Yogesh Simmhan](mailto:simmhan@iisc.ac.in), Technical report, Indian Institute of Science, 2005, https://github.com/dream-lab/pagoda/
